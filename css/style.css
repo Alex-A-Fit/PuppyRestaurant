@@ -1,0 +1,561 @@
+/*
+Alex, Carlos and Trevor
+  11-8-2020
+  Project #3 Puppy Restaurant
+  To take a prototype that was given to us and make a fully responsive website
+
+*/
+
+/* Grabbing Fonts */
+
+@font-face {
+    font-family: 'montaukRegular';
+    src: url(../fonts/Montauk-Regular.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montaukLight';
+    src: url(../fonts/Montauk-Light.otf);
+    font-style: normal;
+}
+
+.hyphens {
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+    overflow: visible;
+}
+
+body {
+    font-family: 'montaukRegular';
+    color: #5f002b;
+}
+
+.montaukReg {
+    font-family: 'montaukRegular';
+    color: #5F002B;
+}
+
+.montaukLite {
+    font-family: 'montaukLight';
+    color: #5F002B;
+}
+
+.fugaz {
+    font-family: 'Fugaz One', Regular;
+}
+
+.puppyBG {
+    background-image: url("../assets/bgtexture.jpg");
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* NavBar */
+
+.muzzlesLogo {
+    padding-left: 30%;
+    width: 100%;
+    height: auto;
+}
+
+.removeBullet {
+    list-style-type: none;
+}
+
+.linksText {
+    font-size: 25px;
+    padding-right: 3%;
+    font-family: 'Fugaz One', Regular;
+}
+
+.linksText:last-child {
+    padding-right: 0%;
+}
+
+.nav-link {
+    color: #5F002B;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #5F002B;
+    font-family: 'Fugaz One', Regular;
+}
+
+.LinksSpacing {
+    padding-right: 8%;
+}
+
+.NoPadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Flexbox */
+
+.menuCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.menuEnd {
+    display: flex;
+    justify-content: end;
+}
+
+/*Alex's Index CSS 
+ First Picture that spans the entire website */
+
+.homePageRooms {
+    background-image: url("../assets/homeHero.jpg");
+    height: 38vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* panini and MuzzleSandwhiches */
+
+.panini {
+    padding-top: 5%;
+}
+
+.muzzleText {
+    padding-top: 5%;
+    color: #5F002B;
+}
+
+.muzzleTextBG {
+    background-color: #FFFFFF;
+    color: #5F002B;
+}
+
+.muzzleparagraph {
+    padding-bottom: 2%;
+}
+
+/*Alex About Page 
+ behindTheGrill and Dog-side photo */
+
+.aboutImg {
+    width: 100%;
+    height: auto;
+}
+
+.behindTheGrillTextBG {
+    background-color: #FFFFFF;
+}
+
+.behindTheGrillTitle {
+    font-size: 40px;
+}
+
+.behindTheGrillParagraph {
+    font-size: 18px;
+}
+
+/* Our Team */
+
+.ourTeamBG {
+    background-color: white;
+}
+
+.ourTeamText {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 35px;
+}
+
+/* Dog Cards */
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Carlos' Menu Title */
+
+.menuTitleText {
+    font-size: 50px;
+    font-family: 'Fugaz One', Regular;
+    color: #5F002B;
+}
+
+.menuTitleBG {
+    background-color: white;
+}
+
+/* Carlos' Menu Food Items */
+
+.menuAdjustRight {
+    padding-right: 0.4%;
+}
+
+.menuAdjustLeft {
+    padding-left: 0.4%;
+}
+
+.menuSubTitle {
+    font-size: 30px;
+    font-family: 'Fugaz One', cursive;
+    color: #5F002B;
+}
+
+.menuItem {
+    font-size: 30px;
+}
+
+.menuDescription {
+    font-size: 18px;
+}
+
+.menuPrice {
+    font-size: 30px;
+}
+
+.menuBorders {
+    border-bottom: solid;
+    color: #5F002B;
+    display: flex;
+    justify-content: center;
+}
+
+.menuIndent {
+    text-indent: 10px;
+}
+
+.menuIndent2 {
+    text-indent: -70px;
+}
+
+.menuIndent3 {
+    text-indent: -60px;
+}
+
+.menuMarginBottom {
+    margin-bottom: 10%;
+}
+
+/* Trevor's Catering CSS */
+
+.cateringPageHeaderFont {
+    font-family: "Fugaz One", cursive;
+    font-size: 50px;
+    color: #5f002b;
+}
+
+.cateringMargin {
+    margin-left: 4.5%;
+}
+
+.cateringPageCardFont1 {
+    font-family: "Fugaz One", cursive;
+    font-size: 35px;
+    color: #5f002b;
+}
+
+.cateringPageCardFont2 {
+    font-family: "Fugaz One", cursive;
+    font-size: 15px;
+    color: #5f002b;
+}
+
+/* Trevor's Photo CSS
+ Trevor's Title */
+
+.photoPageHeaderColor {
+    background-color: white;
+}
+
+.photoPageCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.photoPageHeaderFont {
+    font-family: "Fugaz One", cursive;
+    font-size: 50px;
+    color: #5f002b;
+}
+
+/* Trevor's Photo body */
+
+.photoBorder {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+.photoSpacing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Footer */
+
+.FooterText {
+    color: #5F002B;
+    font-size: 18px;
+}
+
+.Logo {
+    width: 125px;
+}
+
+/*Media Queries */
+
+@media only screen and (min-width: 320px) {
+    .btnSize {
+        font-size: medium;
+    }
+    .muzzlesLogo {
+        width: 280px;
+        height: auto;
+    }
+    .paninisize {
+        width: 100%;
+        height: auto;
+    }
+    .muzzleTitle {
+        font-size: 18px;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 12px;
+        padding-bottom: 8%;
+        padding-left: 3%;
+        padding-right: 0%;
+    }
+    .behindTheGrillTitle {
+        font-size: 30px;
+    }
+    .behindTheGrillParagraph {
+        font-size: 14px;
+    }
+    .dogNameText {
+        font-size: 30px;
+    }
+    .dogDescription {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .muzzleTitle {
+        font-size: 20px;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 13px;
+        padding-bottom: 8%;
+        padding-left: 3%;
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .muzzleTitle {
+        font-size: 20px;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .muzzleTitle {
+        font-size: 35px;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 15px;
+        padding-bottom: 8%;
+        padding-left: 3%;
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nameText {
+        font-size: 35px;
+    }
+    .dogDescription {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .menuAdjustLeft {
+        padding: 0;
+        margin: 0;
+    }
+    .menuAdjustRight {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 994px) {
+    .behindTheGrillTitle {
+        font-size: 40px;
+    }
+    .behindTheGrillParagraph {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .linksText {
+        font-size: 25px;
+        padding-right: 3%;
+    }
+    .muzzleTitle {
+        font-size: 40px;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 22px;
+        padding-bottom: 8%;
+        padding-left: 3%;
+        padding-right: 0%;
+    }
+    .paninisize {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .paninisize {
+        width: 100%;
+        height: auto;
+    }
+    .muzzleTitle {
+        font-size: 30px;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 15px;
+        padding-bottom: 2%;
+    }
+    .behindTheGrillTitle {
+        font-size: 29px;
+    }
+    .behindTheGrillParagraph {
+        font-size: 12px;
+    }
+    .cardWidth {
+        width: auto;
+    }
+    .dogNameText {
+        font-size: 35px;
+    }
+    .dogDescription {
+        font-size: 20px;
+    }
+    .photoPageSizing{
+        width: 25%;
+        height: auto;
+    }
+    /* .photoPagePush{
+        padding-left: 28px;
+        padding-right: 20px;
+    } */
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    .linksText {
+        font-size: 25px;
+        padding-right: 3%;
+    }
+    .paninisize {
+        width: 100%;
+        height: auto;
+    }
+    .muzzleTitle {
+        font-size: 40px;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+    .tripleImages {
+        height: auto;
+    }
+    .behindTheGrillTitle {
+        font-size: 35px;
+    }
+    .behindTheGrillParagraph {
+        font-size: 14px;
+    }
+    .dogNameText {
+        font-size: 40px;
+    }
+    .dogDescription {
+        font-size: 20px;
+    }
+}
+@media only screen and ( min-width: 1700px){
+    .photoPageSizing{
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .behindTheGrillTitle {
+        font-size: 50px;
+    }
+    .behindTheGrillParagraph {
+        font-size: 18px;
+    }
+   
+}
+@media only screen and (min-width: 2000px) {
+    .photoPageheader{
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+}
+@media only screen and (min-width: 2300px) {
+    .linksText {
+        font-size: 30px;
+    }
+    .muzzleTitle {
+        font-size: 60px;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+    .muzzleparagraph {
+        font-size: 27px;
+        padding-bottom: 5%;
+    }
+    .tripleImages {
+        height: 240px;
+    }
+    .behindTheGrillTitle {
+        font-size: 60px;
+    }
+    .behindTheGrillParagraph {
+        font-size: 24px;
+    }
+    .dogNameText {
+        font-size: 60px;
+    }
+    .dogDescription {
+        font-size: 30px;
+    }
+}
+
